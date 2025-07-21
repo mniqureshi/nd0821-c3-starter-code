@@ -2,11 +2,11 @@ import requests
 import json
 
 #url = "enter heroku web app url here"
-url = "https://udacity-fastapi-app.herokuapp.com/inference"
+url = "https://nd0821-c3-starter-code-6-vhan.onrender.com/inference"
 
 
 # explicit the sample to perform inference on
-sample =  { 'age':50,
+sample =  { 'age':40,
             'workclass':"Private", 
             'fnlgt':234721,
             'education':"Doctorate",
@@ -18,8 +18,8 @@ sample =  { 'age':50,
             'sex':"Female",
             'capital_gain':0,
             'capital_loss':0,
-            'hours_per_week':50,
-            'native_country':"United-States"
+            'hours_per_week':30,
+            'native_country':"Canada"
             }
 
 data = json.dumps(sample)
